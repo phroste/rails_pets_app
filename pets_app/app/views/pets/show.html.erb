@@ -1,0 +1,13 @@
+<h1><%= @pet.pet_name %>'s Page!</h1>
+
+<%= link_to 'Back to the list of pets!', pets_path%>
+<br />
+<br />
+<%= link_to 'Edit this pet!', edit_pet_path%>
+
+
+<p>Name: <%= @pet.pet_name %> </p>
+<p>Pet Specie: <%= @pet.pet_specie %> </p>
+<!-- <p>Owner : <%= link_to 'John', owners_path%> </p> -->
+<p><%= link_to 'Owners', owners_path %></p>
+<img src="<%= @pet.pet_image %>" />

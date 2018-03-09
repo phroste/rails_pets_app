@@ -1,0 +1,8 @@
+<%= form_for @pet do |form| %>
+  Name: <%= form.text_field :pet_name %>
+  Specie: <%= form.text_field :pet_specie %>
+  Image: <%= form.text_field :pet_image %>
+  Owner Id: <%= form.text_field :owner_id %>
+  
+  <%= form.submit %>
+<% end %>
